@@ -1,0 +1,10 @@
+<div class="crd" [ngClass]="{'crd--expanded' : !!isExpanded}">
+  <div class="crd__cnt">
+    {{ content }}
+  </div>
+
+  <a href="#" class="crd__toggle" (click)="expandContent($event)">
+    <span *ngIf="!isExpanded">Show More</span>
+    <span *ngIf="!!isExpanded">Show Less</span>
+  </a>
+</div>
